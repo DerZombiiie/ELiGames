@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ein-Mal-Eins</title>
+	<meta charset="utf-8">
+	<style>
+		#Aufg1{width:30px;}
+		#Erg{width:50px;}
+	</style>
+		<script>
+			window.addEventListener('load', reset)
+			function reset(){
+				 document.getElementById('Aufg1').value="";
+			document.getElementById('Erg').value="";
+}
+function start(){
+	var zahlen= ('0','1','2','3','4','5','6','7','8','9');
+	var a=Math.floor(Math.random()*zahlen);
+    var b=Math.floor(Math.random()*zahlen);
+	document.getElementById('Aufg1').value=" "+a+"x"+b;
+
+	}
+ 
+             function cont(){
+	    var A1=document.getElementById('Aufg1').value
+		var A1b=A1.replace(/x/, '*');
+	    var A1a=A1b.replace(/ /, '');
+        var E1= eval(A1a);
+        var E1a=document.getElementById('Erg').value;
+        var nix=""
+        if(A1==nix){
+			}
+	    else if(E1a==nix){
+			} 
+        else if (E1a!=E1){
+		 window.alert("FALSCH!         "+A1+"≠"+E1a+"   "+A1+"="+E1);
+			}
+		else if(E1a==E1){
+
+			window.alert("RICHTIG!        " +A1+"="+E1a);
+			}
+	    
+			
+		}
+
+	</script>
+
+</head>
+<body>
+<div id="Emet"
+<input type="button" onclick="start()" value="Start" id="" />
+<input type="text" readonly  id="Aufg1" > = <input type="text"   id="Erg" >
+<input type="button"  value="OK" id="ok" onclick="cont()"/>
+
+<input type="button" onclick="reset()" value="Genug Geübt!" id="" />
+<input type="button"  value="Weiter" onclick="start()"/>
+</div>
+
+
+</body>
+</html>

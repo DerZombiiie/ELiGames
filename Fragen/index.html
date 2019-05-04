@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript - Werte von HTML-Elementen auslesen</title>
+    <style type="text/css">
+      /* Stilvorlagen */
+    </style>
+    <script type="text/javascript">
+      function hole_hintergrundfarbe() {
+          var hintergrundfarbe=document.getElementById('spielfigur').style.backgroundColor;
+          alert(hintergrundfarbe);
+      }
+      function hole_linkerabstand() {
+          var linkerabstand_mit_einheit=document.getElementById('spielfigur').style.left;
+          var linkerabstand=linkerabstand_mit_einheit.replace(/px$/, '');
+          alert(linkerabstand);
+      }
+      function hole_breite() {
+          var breite_mit_einheit=document.getElementById('spielfigur').style.width;
+          var breite=breite_mit_einheit.replace(/px$/, '');
+          alert(breite);
+      }
+      function hole_höhe() {
+          var höhe_mit_einheit=document.getElementById('spielfigur').style.height;
+          var höhe=höhe_mit_einheit.replace(/px$/, '');
+          alert(höhe);
+      }
+      function hole_obererabstand() {
+          var obererabstand_mit_einheit=document.getElementById('spielfigur').style.top;
+          var obererabstand=obererabstand_mit_einheit.replace(/px$/, '');
+          alert(obererabstand);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="behaelter" style="position:relative;width:300px;height:300px;border-style:solid;border-width:1px;background-color:#f2f2f2;">
+      <div id="spielfigur" style="background-color:red;position:absolute;top:40px;left:30px;width:20px;height:10px;"></div>
+    </div>
+    <input type="button" value="Welche Farbe hat mein Hintergrund?" onclick="hole_hintergrundfarbe()" /><br />
+    <input type="button" value="Wie weit bin ich vom linken Rand entfernt?" onclick="hole_linkerabstand()" /><br />
+    <input type="button" value="Wie breit ist meine Spielfigur?" onclick="hole_breite()" /><br />
+    <input type="button" value="Wie hoch ist meine Spielfigur?" onclick="hole_höhe()" /><br />
+    <input type="button" value="Wie weit bin ich vom oberen Rand entfernt?" onclick="hole_obererabstand()" /><br />
+  </body>
+</html>
+
