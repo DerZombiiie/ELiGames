@@ -1,4 +1,4 @@
-vaXr skins={
+var skins={
 	green:"green",
 	black:"black",
 	fire:"url(Skins/fire.jpeg)",
@@ -14,5 +14,4 @@ vaXr skins={
 	toast:"url(Skins/toast.png)",
 	shit:"url(Skins/shit.png)",
 	smiley:"url(Skins/smiley.gif)"
-	}lol
-sdww
+	}

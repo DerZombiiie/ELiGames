@@ -23,7 +23,7 @@ var acceleration=5;
 
 
 
-setTimeout(starts,200);
+setTimeout(starts,100);
 function starts(){
 	generateMap("default");
 	spawn();
